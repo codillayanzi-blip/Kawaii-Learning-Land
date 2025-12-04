@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animals - Kawaii Learning Land</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Baloo 2', cursive; }
+
+    /* FULLSCREEN GIF BACKGROUND */
+    body {
+      background: url("We Heart It.gif") no-repeat center center fixed;
+      background-size: cover;
+      color:#333;
+    }
+
+    header {
+      background-color: rgba(255, 182, 193, 0.7); 
+      padding:25px; 
+      text-align:center;
+      font-size:2.8em;
+      font-weight:800;
+      color:#fff;
+      border-bottom: 3px solid rgba(255, 204, 229, 0.7);
+      border-radius: 0 0 20px 20px;
+    }
+
+    nav {
+      display:flex; justify-content:center; gap:20px; margin:25px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration:none;
+      background-color:#ff99bb; 
+      color:#fff;
+      padding:15px 25px;
+      border-radius:20px;
+      font-weight:800;
+      transition:0.3s ease;
+    }
+
+    nav a:hover {
+      background-color:#d8b6ff;
+      transform:scale(1.1);
+    }
+
+    main {
+      text-align:center;
+      padding:50px 20px;
+      background-color: rgba(255,255,255,0.6);
+      border-radius:25px;
+      width:90%;
+      max-width:1000px;
+      margin:30px auto;
+    }
+
+    main h2 {
+      font-size:2.5em;
+      font-weight:800;
+      color:#ff99bb; 
+      margin-bottom:40px;
+    }
+
+    /* ANIMAL GRID */
+    .animal-grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* flexible columns */
+      gap:25px;
+      max-width:100%;
+      margin:0 auto;
+    }
+
+    .card {
+      background-color: rgba(255, 214, 232, 0.7); 
+      border-radius:20px;
+      padding:15px;
+      box-shadow:0 3px 8px rgba(0,0,0,0.1);
+      transition:0.3s;
+      text-align:center;
+    }
+
+    .card:hover { transform:scale(1.05); }
+
+    .card img {
+      width:100px;
+      margin-bottom:10px;
+    }
+
+    .card p {
+      font-size:1.2em;
+      font-weight:800;
+      color:#555;
+      margin-bottom:10px;
+    }
+
+    .play-btn {
+      padding:8px 15px;
+      background:#ff99bb;
+      border:none;
+      border-radius:10px;
+      color:#fff;
+      font-weight:800;
+      cursor:pointer;
+      transition:0.3s;
+      font-family:'Baloo 2', cursive;
+    }
+
+    .play-btn:hover {
+      background:#d8b6ff;
+    }
+
+    footer {
+      background-color: rgba(255, 182, 193, 0.7);
+      text-align:center;
+      color:#fff;
+      padding:20px;
+      font-weight:800;
+      margin-top:50px;
+      border-radius:20px 20px 0 0;
+    }
+
+    /* RESPONSIVE ADJUSTMENTS */
+    @media screen and (max-width:700px) {
+      .animal-grid { grid-template-columns: repeat(2, 1fr); }
+      .card img { width:80px; }
+    }
+
+    @media screen and (max-width:450px) {
+      .animal-grid { grid-template-columns: 1fr; }
+      .card img { width:70px; }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>Kawaii Learning Land</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="colors.html">Colors</a>
+  <a href="animals.html">Animals</a>
+  <a href="alphabet.html">Alphabet</a>
+  <a href="about.html">About</a>
+</nav>
+
+<main>
+  <h2>Meet Our Cute Kawaii Animals!</h2>
+
+  <div class="animal-grid">
+
+    <div class="card">
+      <img src="cat.gif" alt="Cat">
+      <p>Cat</p>
+      <audio id="audio-cat" src="cat-meow-401729.mp3"></audio>
+      <button class="play-btn" onclick="document.getElementById('audio-cat').play()">Press!</button>
+    </div>
+
+    <div class="card">
+      <img src="dog.gif" alt="Dog">
+      <p>Dog</p>
+      <audio id="audio-dog" src="dog-barking-406629.mp3"></audio>
+      <button class="play-btn" onclick="document.getElementById('audio-dog').play()">Press!</button>
+    </div>
+
+    <div class="card">
+      <img src="bunny.gif" alt="Bunny">
+      <p>Bunny</p>
+      <audio id="audio-bunny" src="rabbit-sounds-358172.mp3"></audio>
+      <button class="play-btn" onclick="document.getElementById('audio-bunny').play()">Press!</button>
+    </div>
+
+    <div class="card">
+      <img src="bear.gif" alt="Bear">
+      <p>Bear</p>
+      <audio id="audio-bear" src="bear-191995.mp3"></audio>
+      <button class="play-btn" onclick="document.getElementById('audio-bear').play()">Press!</button>
+    </div>
+
+    <div class="card">
+      <img src="Stickers Frog.gif" alt="Frog">
+      <p>Frog</p>
+      <audio id="audio-frog" src="frog-croaking-sound-effect-322956.mp3"></audio>
+      <button class="play-btn" onclick="document.getElementById('audio-frog').play()">Press!</button>
+    </div>
+
+    <div class="card">
+      <img src="download.gif" alt="Panda">
+      <p>Panda</p>
+      <audio id="audio-panda" src="space-animal-104986.mp3"></audio>
+      <button class="play-btn" onclick="document.getElementById('audio-panda').play()">Press!</button>
+    </div>
+
+  </div>
+</main>
+
+<footer>Made with love by Princess & Clarence 💖</footer>
+
+</body>
+</html>
