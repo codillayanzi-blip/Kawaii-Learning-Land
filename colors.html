@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors - Kawaii Learning Land</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Baloo 2', cursive; }
+
+    /* FULLSCREEN GIF BACKGROUND */
+    body {
+      background: url("We Heart It.gif") no-repeat center center fixed;
+      background-size: cover;
+      color:#333;
+    }
+
+    header {
+      background-color: rgba(255, 182, 193, 0.8); /* pastel pink transparent */
+      padding:25px;
+      text-align:center;
+      font-size:2.8em;
+      color:#fff;
+      border-bottom: 3px solid rgba(255, 204, 229, 0.7);
+      border-radius: 0 0 20px 20px;
+    }
+
+    nav {
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      margin:25px 0;
+    }
+
+    nav a {
+      text-decoration:none;
+      background-color:#ffb3c6; /* soft pastel */
+      color:#fff;
+      padding:15px 25px;
+      border-radius:20px;
+      font-weight:bold;
+      transition:0.3s ease;
+    }
+
+    nav a:hover {
+      background-color:#d8b6ff;
+      transform:scale(1.1);
+    }
+
+    main {
+      text-align:center;
+      padding:50px 20px;
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+      background-color: rgba(255,255,255,0.6); /* soft overlay */
+      border-radius:25px;
+    }
+
+    main h2 {
+      font-size:3em;
+      color:#ff99bb; /* pastel pink heading */
+      margin-bottom:40px;
+    }
+
+    .color-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(160px, 1fr));
+      gap:25px;
+      margin:0 auto;
+    }
+
+    .color-card {
+      padding:20px;
+      border-radius:20px;
+      font-size:1.2em;
+      font-weight:bold;
+      color:#000000;
+      text-align:center;
+      transition:transform 0.3s;
+      background-color: rgba(255,255,255,0.8);
+    }
+
+    .color-card:hover { transform:scale(1.05); }
+
+    /* PASTEL COLORS */
+    .pastel-pink { background-color:#FFD6E8; }
+    .pastel-blue { background-color:#D5ECFF; }
+    .pastel-yellow { background-color:#FFF3B0; }
+    .pastel-purple { background-color:#E6D6FF; }
+    .pastel-green { background-color:#C8FACC; }
+    .pastel-red { background-color:#FFCECE; }
+    .pastel-orange { background-color:#FFE3C0; }
+    .pastel-brown { background-color:#D2B48C; }
+    .pastel-teal { background-color:#A0E7E5; }
+    .pastel-lavender { background-color:#E6E6FA; }
+
+    .color-card img {
+      width:90px;
+      margin-bottom:10px;
+    }
+
+    button {
+      margin-top:10px;
+      padding:10px 20px;
+      border:none;
+      background:#ffffffaa;
+      border-radius:15px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+    }
+    button:hover {
+      background:#fff;
+      transform:scale(1.05);
+    }
+
+    footer {
+      background-color: rgba(255, 182, 193, 0.8);
+      text-align:center;
+      padding:20px;
+      color:#fff;
+      font-weight:bold;
+      margin-top:50px;
+      border-radius:20px 20px 0 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>Kawaii Learning Land</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="colors.html">Colors</a>
+    <a href="animals.html">Animals</a>
+    <a href="alphabet.html">Alphabet</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <h2>Learn Colors with Kawaii Friends!</h2>
+
+    <div class="color-grid">
+
+      <div class="color-card pastel-pink">
+        <img src="pink.gif" alt="">
+        <p>Pink</p>
+        <audio id="pinkAudio" src="pink-7989.mp3"></audio>
+        <button onclick="document.getElementById('pinkAudio').play()">Press Me</button>
+      </div>
+
+      <div class="color-card pastel-blue">
+        <img src="blue.gif" alt="">
+        <p>Blue</p>
+        <audio id="blueAudio" src="blue-7985.mp3"></audio>
+        <button onclick="document.getElementById('blueAudio').play()">Press Me</button>
+      </div>
+
+      <div class="color-card pastel-yellow">
+        <img src="yellow.gif" alt="">
+        <p>Yellow</p>
+        <audio id="yellowAudio" src="yellow-7993.mp3"></audio>
+        <button onclick="document.getElementById('yellowAudio').play()">Press Me</button>
+      </div>
+
+      <div class="color-card pastel-purple">
+        <img src="purple.gif" alt="">
+        <p>Purple</p>
+        <audio id="purpleAudio" src="purple-7990.mp3"></audio>
+        <button onclick="document.getElementById('purpleAudio').play()">Press Me</button>
+      </div>
+
+      <div class="color-card pastel-green">
+        <img src="green.gif" alt="">
+        <p>Green</p>
+        <audio id="greenAudio" src="green-7987.mp3"></audio>
+        <button onclick="document.getElementById('greenAudio').play()">Press Me</button>
+      </div>
+
+      <div class="color-card pastel-red">
+        <img src="red.gif" alt="">
+        <p>Red</p>
+        <audio id="redAudio" src="red-7991.mp3"></audio>
+        <button onclick="document.getElementById('redAudio').play()">Press Me</button>
+      </div>
+
+      <div class="color-card pastel-orange">
+        <img src="orange.gif" alt="">
+        <p>Orange</p>
+        <audio id="orangeAudio" src="orange-7988.mp3"></audio>
+        <button onclick="document.getElementById('orangeAudio').play()">Press Me</button>
+      </div>
+
+      <div class="color-card pastel-brown">
+        <img src="brown.gif" alt="">
+        <p>Brown</p>
+        <audio id="brownAudio" src="brown-7986.mp3"></audio>
+        <button onclick="document.getElementById('brownAudio').play()">Press Me</button>
+      </div>
+
+      <div class="color-card pastel-teal">
+        <img src="teal.gif" alt="Teal">
+        <p>Teal</p>
+        <audio id="tealAudio" src="teal.mp3"></audio>
+        <button onclick="document.getElementById('tealAudio').play()">Press Me</button>
+      </div>
+
+      <div class="color-card pastel-lavender">
+        <img src="lavender.gif" alt="Lavender">
+        <p>Lavender</p>
+        <audio id="lavenderAudio" src="lavender.mp3"></audio>
+        <button onclick="document.getElementById('lavenderAudio').play()">Press Me</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>Made with love by Princess & Clarence 💖</footer>
+
+</body>
+</html>

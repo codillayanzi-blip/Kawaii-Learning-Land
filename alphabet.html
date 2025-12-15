@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alphabet - Kawaii Learning Land</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Baloo 2', cursive; }
+
+    /* FULLSCREEN GIF BACKGROUND */
+    body {
+      background: url("We Heart It.gif") no-repeat center center fixed;
+      background-size: cover;
+      color:#333;
+    }
+
+    header {
+      background-color: rgba(255, 182, 193, 0.7);
+      padding:25px;
+      text-align:center;
+      font-size:2.8em;
+      font-weight:800;
+      color:#fff;
+      border-bottom: 3px solid rgba(255, 204, 229, 0.7);
+      border-radius: 0 0 20px 20px;
+    }
+
+    nav {
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      margin:25px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration:none;
+      background-color:#ff99bb;
+      color:#fff;
+      padding:15px 25px;
+      border-radius:20px;
+      font-weight:800;
+      transition:0.3s ease;
+    }
+
+    nav a:hover {
+      background-color:#d8b6ff;
+      transform:scale(1.1);
+    }
+
+    main {
+      text-align:center;
+      padding:50px 20px;
+      background-color: rgba(255,255,255,0.6);
+      border-radius:25px;
+      width:90%;
+      max-width:1000px;
+      margin:30px auto;
+    }
+
+    main h2 {
+      font-size:2.5em;
+      font-weight:800;
+      color:#ff99bb;
+      margin-bottom:40px;
+    }
+
+    .alphabet-grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap:20px;
+      max-width:700px;
+      margin:0 auto;
+    }
+
+    .letter {
+      position:relative;
+      background-color: rgba(255, 214, 232, 0.7);
+      padding:20px;
+      border-radius:15px;
+      font-size:1.6em;
+      color:#ff99bb;
+      font-weight:800;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .letter:hover {
+      transform:scale(1.15);
+      background-color:#ffe5f2;
+    }
+
+    /* Tooltip style */
+    .letter::after {
+      content: attr(data-tooltip);
+      position:absolute;
+      bottom:120%;
+      left:50%;
+      transform:translateX(-50%);
+      background: #ffd6e8;
+      color:#fff;
+      padding:6px 12px;
+      border-radius:8px;
+      font-size:0.9em;
+      white-space: nowrap;
+      opacity:0;
+      pointer-events:none;
+      transition:0.3s;
+      box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .letter:hover::after {
+      opacity:1;
+    }
+
+    footer {
+      background-color: rgba(255, 182, 193, 0.7);
+      text-align:center;
+      color:#fff;
+      padding:20px;
+      font-weight:800;
+      margin-top:50px;
+      border-radius:20px 20px 0 0;
+    }
+
+    /* RESPONSIVE ADJUSTMENTS */
+    @media screen and (max-width:700px) {
+      .alphabet-grid { grid-template-columns: repeat(5, 1fr); }
+    }
+    @media screen and (max-width:500px) {
+      .alphabet-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media screen and (max-width:350px) {
+      .alphabet-grid { grid-template-columns: repeat(2, 1fr); }
+      .letter { font-size:1.3em; padding:15px; }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>Kawaii Learning Land</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="colors.html">Colors</a>
+  <a href="animals.html">Animals</a>
+  <a href="alphabet.html">Alphabet</a>
+  <a href="about.html">About</a>
+</nav>
+
+<main>
+  <h2>Learn the Alphabet!</h2>
+
+  <div class="alphabet-grid">
+    <div class="letter" data-tooltip="A is for Apple">A</div>
+    <div class="letter" data-tooltip="B is for Ball">B</div>
+    <div class="letter" data-tooltip="C is for Cat">C</div>
+    <div class="letter" data-tooltip="D is for Dog">D</div>
+    <div class="letter" data-tooltip="E is for Elephant">E</div>
+    <div class="letter" data-tooltip="F is for Fish">F</div>
+    <div class="letter" data-tooltip="G is for Grapes">G</div>
+    <div class="letter" data-tooltip="H is for Hat">H</div>
+    <div class="letter" data-tooltip="I is for Ice Cream">I</div>
+    <div class="letter" data-tooltip="J is for Juice">J</div>
+    <div class="letter" data-tooltip="K is for Kite">K</div>
+    <div class="letter" data-tooltip="L is for Lion">L</div>
+    <div class="letter" data-tooltip="M is for Monkey">M</div>
+    <div class="letter" data-tooltip="N is for Nest">N</div>
+    <div class="letter" data-tooltip="O is for Orange">O</div>
+    <div class="letter" data-tooltip="P is for Panda">P</div>
+    <div class="letter" data-tooltip="Q is for Queen">Q</div>
+    <div class="letter" data-tooltip="R is for Rabbit">R</div>
+    <div class="letter" data-tooltip="S is for Sun">S</div>
+    <div class="letter" data-tooltip="T is for Tiger">T</div>
+    <div class="letter" data-tooltip="U is for Umbrella">U</div>
+    <div class="letter" data-tooltip="V is for Violin">V</div>
+    <div class="letter" data-tooltip="W is for Whale">W</div>
+    <div class="letter" data-tooltip="X is for Xylophone">X</div>
+    <div class="letter" data-tooltip="Y is for Yacht">Y</div>
+    <div class="letter" data-tooltip="Z is for Zebra">Z</div>
+  </div>
+</main>
+
+<footer>Made with love by Princess & Clarence 💖</footer>
+
+</body>
+</html>
